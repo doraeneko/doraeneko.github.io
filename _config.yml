@@ -32,7 +32,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
-
+  - jekyll-include-cache
+  
 paginate: 5   # Posts per page
 paginate_path: "/page:num/"
 
