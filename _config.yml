@@ -4,8 +4,58 @@ description: Was geschah im Herbst 2025.
 url: https://doraeneko.github.io
 show_downloads: true
 markdown: kramdown
-theme: jekyll-theme-cayman
 github:
   is_project_page: false
 author: A.G.
 
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+
+title: "Sabbatical 2025"
+description: "AWas geschah im Herbst 2025."
+url: "https://doraeneko.github.io"  
+baseurl: ""  # Or "/projectname" if not at root
+
+# Theme settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+paginate: 5   # Posts per page
+paginate_path: "/page:num/"
+
+# Author info (optional)
+author:
+  name: "A.G."
+  bio: "r"
+  #avatar: "/assets/images/avatar.jpg"  # Add image if you want
+
+# Navigation links (optional)
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "About"
+    url: "/about/"
+
+# Optional defaults (applies to all posts)
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: true
