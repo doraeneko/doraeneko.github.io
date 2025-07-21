@@ -1,6 +1,17 @@
-title: "Sabbatical 2025"
+# Site settings
+title: ""Sabbatical 2025"
 description: "Was geschah im Herbst 2025."
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+url: "https://doraeneko.github.io"  # Replace with your site URL
+baseurl: ""  # Leave empty unless hosting in a subdirectory
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-cayman
+
+# Optional: GitHub Pages settings
+github:
+  is_project_page: false
+
+# Social links (optional)
+author: A.G.
 
