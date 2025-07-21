@@ -1,17 +1,11 @@
 # Site settings
-title: "Sabbatical 2025"
-description: "Was geschah im Herbst 2025."
-url: "https://doraeneko.github.io"  # Replace with your site URL
-baseurl: ""  # Leave empty unless hosting in a subdirectory
-
-# Build settings
+title: Sabbatical 2025
+description: Was geschah im Herbst 2025.
+url: https://doraeneko.github.io
+show_downloads: true
 markdown: kramdown
 theme: jekyll-theme-cayman
-
-# Optional: GitHub Pages settings
 github:
   is_project_page: false
-
-# Social links (optional)
 author: A.G.
 
