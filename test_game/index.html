@@ -1,51 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>My Macroquad Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Game</title>
     <style>
         html,
-        body {
+        body,
+        canvas {
             margin: 0;
             padding: 0;
-            background: black;
-            overflow: hidden;
             width: 100%;
             height: 100%;
-        }
-
-        canvas {
-            display: block;
-            margin: auto;
+            overflow: hidden;
+            position: absolute;
+            background: black;
+            z-index: 0;
         }
     </style>
 </head>
 
 <body>
-    <script>
-        // Macroquad runtime loader (from miniquad)
-        const canvas = document.createElement("canvas");
-        document.body.appendChild(canvas);
-
-        const importObject = {
-            env: {
-                abort: () => console.error("Abort!"),
-            }
-        };
-
-        fetch("test_game.wasm")
-            .then(r => r.arrayBuffer())
-            .then(bytes => WebAssembly.instantiate(bytes, importObject))
-            .then(results => {
-                const exports = results.instance.exports;
-                if (exports.main) {
-                    exports.main();
-                } else {
-                    console.error("No `main` export found in wasm");
-                }
-            });
-    </script>
+    <canvas id="glcanvas" tabindex='1'></canvas>
+    <!-- Minified and statically hosted version of https://github.com/not-fl3/macroquad/blob/master/js/mq_js_bundle.js -->
+    <script src="https://not-fl3.github.io/miniquad-samples/mq_js_bundle.js"></script>
+    <script>load("test_game.wasm");</script> <!-- Your compiled WASM binary -->
 </body>
 
 </html>
