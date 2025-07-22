@@ -60,3 +60,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+exclude:
+  - kanjiban/*
+  - test_game/*
